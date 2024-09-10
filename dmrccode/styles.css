@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.page-title {
+  background-color: #ecb732;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; 
+}
+.logo{
+  color: #f80505;
+  background-color: #ecb732;
+  font-size: 24px;
+  font-weight: bold;
+  background-image: url('https://imgs.search.brave.com/TJRFmwxaFYEqVXEo5tw7SmrtMPjULOIHHjJVVpKXIA4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzY1L0RlbGhpX01l/dHJvX2xvZ28uc3Zn.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 40px; 
+  padding-right: 20px;
+}
+.text-size {
+  font-size: 5px; 
+}
+.search-bar a {
+  margin-right: 10px; /* Adjust the value to set the desired space */
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #808080;
+  color: rgb(16, 1, 1);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.top-menu-bar {
+    background-color: #808080; 
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+.top-menu-bar nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu-bar nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-menu-bar nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  background-color: #808080;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ecb732;
+  border-radius: 10px;
+} 
+.top-menu-bar .dropdown-content {
+  display: none;
+}
+
+.top-menu-bar .dropdown-content.show {
+  display: block;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.left-panel {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    
+}
+
+.left-panel h2 {
+    color: #0072c6;
+}
+
+.left-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.left-panel h3 {
+  border: 2px solid #ADD8E6;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: rgb(64, 43, 43);
+}
+.left-panel li {
+    margin-bottom: 10px;
+}
+.left-panel ul {
+  display: none;
+}
+
+.left-panel ul.show {
+  display: block;
+}
+main {
+    width: 60%;
+    padding: 20px;
+}
+
+main h2 {
+    color: #0072c6;
+}
+
+.right-panel {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.right-panel h2 {
+    color: #0072c6;
+}
+
+.right-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right-panel li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.left-panel h2,
+.right-panel h2 {
+    color: #0072c6;
+}
+
+.left-panel ul,
+.right-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-panel li,
+.right-panel li {
+    margin-bottom: 10px;
+}
+
+.newsflash-list {
+  list-style: none;
+  padding: 0;
+}
+
+.newsflash-list li {
+  background-color: #f2f2f2;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: rgb(64, 43, 43);
+}
+
+.newsflash-list h2 {
+  margin-top: 0;
+  color: rgb(64, 43, 43);
+  
+}
+
+#pdf-section {
+    text-align: center;
+}
+#pdf-section a {
+  font-weight: bold;
+  color: blue;
+  size: 5px; 
+}
+footer {
+  background-color: #7f7a7a;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
